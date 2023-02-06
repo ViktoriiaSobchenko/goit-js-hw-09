@@ -36,6 +36,7 @@ const options = {
 flatpickr('#datetime-picker', options);
 
 startBtn.addEventListener('click', startTimer);
+let intervalId = 0;
 
 function startTimer() {
   intervalId = setInterval(onCountDown, 1000);
